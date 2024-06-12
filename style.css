@@ -1,0 +1,214 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-image: url(img/yoga2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1100px;
+    max-width: 100%;
+}
+
+.img-fluid {
+    max-width: 50%; /* Limits the width of the image to 50% of the container */
+    padding: 0 20px; /* Optional: Adds some spacing around the image */
+}
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.heading{
+    padding: none;
+    font-size: 40px;
+    color: #e9ebe5;
+    font-family: 'Pacifico';
+}
+
+/*CSS Variables*/
+:root{
+    --navbar-height:60px;
+}
+
+/*Navbar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    background-color: rgba(90, 5, 147, 0.5);
+    position: relative;
+    height: 90px;
+    width: 100%;
+}
+
+/*Navbar:Logo and Image*/
+#logo{
+    margin: 4px 10px;
+}
+
+#logo img{
+    height: 64px;
+    margin: 2px 2px;
+    border-radius: 40px;
+}
+
+/*Navbar:List Styling*/
+
+#navbar ul{
+    display: flex;
+    padding: 85px;
+    margin: 8px;;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+    padding: 4px;
+    font-family: 'Libre Bodoni',cursive;
+}
+
+#navbar ul li a{
+    color: whitesmoke;
+    padding:10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/*Home Section*/
+
+#home{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 50px;
+    background-color: rgba(45, 130, 130, 0.295);
+    color: rgb(245, 238, 247);
+    font-size: 20px;
+    font-family: 'Libre Bodoni',cursive;
+}
+
+#home h1{
+    color: black;
+    padding: 10px 4px;
+    font-size: 45px;
+    font-family: 'Dancing Script';
+    font-weight: bolder;
+}
+
+/*cards section*/
+.cards{
+    display: flex;
+    gap: 80px; /* Optional: Adds some space between the cards */
+    justify-content: center; /* Optional: Centers the cards horizontally */
+    flex-wrap: wrap; 
+    padding: 40px 40px;
+}
+
+#card1:hover{
+    transform: scale(1.2);
+}
+#card2:hover{
+    transform: scale(1.2);
+}
+#card3:hover{
+    transform: scale(1.2);
+}
+
+#card1{
+    width: 1500px;
+    font-size: 15px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+#card2{
+    width: 1500px;
+    font-size: 16px;
+    height: 600px;
+}
+#card3{
+    width: 1500px;
+    font-size: 14px;
+    height: 600px;
+}
+
+.card-title{
+    background-color: rgba(10, 224, 253, 0.233);
+    padding: 10px;
+    border-radius: 10px;
+}
+.card-body{
+    background-color: rgba(255, 202, 127, 0.801);
+}
+
+.btn{
+    width:250px;
+    border-radius: 40px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: rgb(243, 219, 219);
+    
+}
+
+.form{
+    width: 100%;
+}
+
+footer{
+    color: black;
+}
+
+span{
+    padding: 0px 100px;
+}
+
+.form{
+    background-color: rgba(218, 243, 243, 0.575);
+    padding: 10px 20px;
+    color: black;
+}
+
+@media (max-width: 576px ) {
+    #navbar{
+      padding: 2px;
+      
+    }
+    #navbar ul li a{
+       padding: 2px;
+    }
+    #navbar ul li{
+        padding: 1px;
+    }
+    #navbar ul li{
+        padding: 4px;
+    }
+    body{
+        width: 50px;
+    }
+    #card{
+        width: 50px;
+    }
+    #navbar img{
+        width: 50px;
+    }
+    #home h1{
+      font-size: 2rem;
+    }
+    #home p {
+      font-size: 1rem;
+    }
+    .heading{
+        font-size: 1rem;
+    }
+  }
